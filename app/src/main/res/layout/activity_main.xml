@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3B0DF"
+    android:backgroundTint="#D5DCC9"
+    android:padding="16dp"
+    android:scrollbarThumbHorizontal="@color/design_default_color_background"
+    android:scrollbarThumbVertical="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="373dp"
+        android:layout_height="266dp"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY" />
+
+    <EditText
+        android:id="@+id/guessEditText"
+        android:layout_width="373dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/imageView"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="Введите название страны"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="385dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/guessEditText"
+        android:layout_marginTop="59dp"
+        android:backgroundTint="#486C42"
+        android:text="Проверить"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-103dp"
+        android:textColor="#486C42"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
